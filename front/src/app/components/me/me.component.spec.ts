@@ -6,8 +6,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { SessionService } from 'src/app/services/session.service';
+import { of } from 'rxjs';
 
 import { MeComponent } from './me.component';
+import { User } from '../../interfaces/user.interface';
+import { UserService } from '../../services/user.service';
 
 describe('MeComponent', () => {
   let component: MeComponent;
